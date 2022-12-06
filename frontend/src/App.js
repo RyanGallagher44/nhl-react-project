@@ -19,7 +19,7 @@ function App() {
             <Link className="root-link" to="/">
               Teams
             </Link>
-            <Link className="root-link" to={`/schedule/${new Date().getFullYear()}-${new Date().getMonth()+1}-${new Date().getDate()}`}>
+            <Link className="root-link" to={`/schedule/${new Date().getFullYear()}-${('0' + (new Date().getMonth()+1)).slice(-2)}-${('0' + (new Date().getDate())).slice(-2)}`}>
               Scores
             </Link>
             <Link className="root-link" to="/standings">
