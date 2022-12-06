@@ -1,0 +1,118 @@
+.App {
+  text-align: center;
+  align-items: center;
+  text-align: center;
+}
+
+body {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+h1, h2, h3, h5 {
+  color: #e1e1e1;
+  font-weight: 400;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@keyframes card-elevate {
+  to {
+    transform: translateY(-30px);
+  }
+}
+
+@keyframes card-drop {
+  from {
+    transform: translateY(-30px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.card {
+  animation-name: card-drop;
+  animation-duration: 0.25s;
+  animation-iteration-count: 1;
+}
+
+.card:hover {
+  animation-name: card-elevate;
+  animation-duration: 0.25s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  box-shadow: 0px 20px 10px 0px rgba(0,0,0,0.75);
+}
+
+.logo {
+  width: 50%;
+  height: 50%;
+  max-width: 300px;
+  margin: 10px;
+}
+
+.game-div {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.at-symbol {
+  margin: 25px;
+}
+
+.team-link {
+  color: black;
+  text-decoration: none;
+}
+
+.team-link:visited {
+  color: black;
+}
+
+.goal-img {
+  margin: 5px;
+}
+
+.root-link {
+  text-decoration: none !important;
+  padding: 10px;
+	background-color: #1f1f1f;
+	border-radius: 10px;
+	color: #e1e1e1;
+	margin: 5px;
+}
+
+.date-selection-div {
+  margin: 10px;
+}
+
+.current-date {
+  display: inline;
+  margin: 20px;
+}
+
+.root-link:hover {
+  color: white;
+}
+
+.flex-link {
+  flex-direction: row;
+}
+
+.game-winner {
+  font-weight: 900;
+}
